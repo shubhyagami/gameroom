@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gameroom{{ '/' + current_path if current_path }}</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+  .navbar { background: #161b22; border-bottom: 1px solid #30363d; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+  .navbar h1 { font-size: 18px; font-weight: 600; }
+  .navbar h1 a { color: #f0f6fc; text-decoration: none; }
+  .navbar h1 a:hover { color: #58a6ff; }
+  .nav-right { display: flex; gap: 16px; align-items: center; font-size: 14px; }
+  .nav-right a { color: #8b949e; text-decoration: none; }
+  .nav-right a:hover { color: #58a6ff; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+  .breadcrumb-bar { font-size: 14px; margin-bottom: 16px; padding: 8px 0; border-bottom: 1px solid #30363d; display: flex; align-items: center; flex-wrap: wrap; }
+  .breadcrumb-bar a { color: #58a6ff; text-decoration: none; }
+  .breadcrumb-bar a:hover { text-decoration: underline; }
+  .breadcrumb-bar .sep { color: #8b949e; margin: 0 6px; }
+  .file-list { border: 1px solid #30363d; border-radius: 6px; overflow: hidden; }
+  .file-list-header { background: #161b22; padding: 10px 16px; border-bottom: 1px solid #30363d; display: flex; font-size: 12px; color: #8b949e; text-transform: uppercase; }
+  .file-list-header .col-name { flex: 1; }
+  .file-list-header .col-size { width: 80px; text-align: right; }
+  .file-row { display: flex; align-items: center; padding: 8px 16px; border-bottom: 1px solid #21262d; font-size: 14px; transition: background 0.15s; text-decoration: none; color: #c9d1d9; }
+  .file-row:last-child { border-bottom: none; }
+  .file-row:hover { background: #161b22; }
+  .file-row .icon { margin-right: 12px; font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
+  .file-row .icon.dir { color: #58a6ff; }
+  .file-row .icon.file { color: #8b949e; }
+  .file-row .name { flex: 1; color: #58a6ff; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .file-row:hover .name { text-decoration: underline; }
+  .file-row .size { color: #8b949e; font-size: 12px; width: 80px; text-align: right; flex-shrink: 0; }
+  footer { text-align: center; padding: 24px; color: #8b949e; font-size: 12px; border-top: 1px solid #30363d; margin-top: 40px; }
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1><a href="/">gameroom</a></h1>
+    <div class="nav-right">
+      <a href="/">Code</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="breadcrumb-bar">
+      {% for crumb in breadcrumbs %}
+        {% if not loop.first %}<span class="sep">/</span>{% endif %}
+        {% if loop.last %}
+          <strong>{{ crumb.name }}</strong>
+        {% else %}
+          <a href="{{ url_for('browse', filepath=crumb.path) if crumb.path else '/' }}">{{ crumb.name }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="file-list">
+      <div class="file-list-header">
+        <span class="col-name">Name</span>
+        <span class="col-size">Size</span>
+      </div>
+      {% if current_path %}
+      <a href="{{ url_for('browse', filepath='/'.join(current_path.split('/')[:-1])) if '/' in current_path else '/' }}" class="file-row">
+        <span class="icon dir">📁</span>
+        <span class="name" style="color:#c9d1d9;">..</span>
+        <span class="size"></span>
+      </a>
+      {% endif %}
+      {% for entry in entries %}
+      <a href="{{ url_for('browse', filepath=entry.path) }}" class="file-row">
+        <span class="icon {{ 'dir' if entry.is_dir else 'file' }}">{{ '📁' if entry.is_dir else '📄' }}</span>
+        <span class="name">{{ entry.name }}{{ '/' if entry.is_dir }}</span>
+        <span class="size">{{ entry.size_hr }}</span>
+      </a>
+      {% endfor %}
+      {% if not entries and not current_path %}
+      <div class="file-row"><span class="name" style="color:#8b949e;">No files found</span></div>
+      {% endif %}
+    </div>
+  </div>
+  <footer>Hosted on Render</footer>
+</body>
+</html>
