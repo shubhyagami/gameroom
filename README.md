@@ -18,6 +18,8 @@
 [![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=★%20Stars)](https://github.com/shubhyagami/gameroom)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/pulls)
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square)](https://github.com/shubhyagami/gameroom)
+[![Game Count](https://img.shields.io/badge/games-3%2B-blueviolet?style=flat-square)](https://github.com/shubhyagami/gameroom)
+[![Peak Players](https://img.shields.io/badge/max%20players-8-ff69b4?style=flat-square)](https://github.com/shubhyagami/gameroom)
 
 ---
 
@@ -73,82 +75,74 @@ GameRoom is a static web app – zero build tools required.
 ```bash
 git clone https://github.com/shubhyagami/gameroom.git
 cd gameroom
-open index.html        # macOS
+open index.html   # macOS
 # or
-xdg-open index.html    # Linux
-# or double‑click index.html (Windows)
+start index.html  # Windows
+# or
+xdg-open index.html # Linux
 ```
 
-### Option 2: Local Server (Recommended for multiplayer)
+### Option 2: Download ZIP
 
-```bash
-# Using Python
-python3 -m http.server 8080
-# Then visit http://localhost:8080
-```
+- Go to [the repository](https://github.com/shubhyagami/gameroom)
+- Click **Code → Download ZIP**
+- Unzip and open `index.html` in your browser
 
----
+### Option 3: Host on GitHub Pages (Recommended for multiplayer)
 
-## 🏆 Pro Tips
+1. Fork the repo
+2. Go to **Settings → Pages**
+3. Select `main` branch and `/docs` folder (or root)
+4. Share the generated URL with friends
 
-Get an edge over your opponents with these insider tricks:
-
-### 🐍 Snake
-- **Corner camping** – In the late game, stay near walls to force opponents into your tail.
-- **Speed burst** – Hold the boost key (spacebar) to dash forward, but beware of your own trail.
-- **Power‑up priority** – Grab the **speed‑down** power‑up when you’re leading; it slows everyone else.
-
-### 🏓 Pong
-- **Angle your shots** – Hit the ball near the edge of your paddle for a sharper bounce.
-- **CPU bait** – Against AI, send the ball high then low – the bot will overcorrect.
-- **Serve trick** – Press the serve button at the exact moment the ball flashes to launch it at max speed.
-
-### 🧱 Breakout
-- **Catch the bonus** – Let the ball bounce off the very top of the paddle to earn a multiball power‑up.
-- **Brick patterns** – Destroy bricks in a zigzag to create chain reactions when the ball ricochets.
-- **Laser aim** – If you have the laser upgrade, fire straight up to clear a column in one shot.
+> Multiplayer features require both players to be on the same network or using a STUN/TURN server. The default config works over LAN.
 
 ---
 
-## 🎯 Weekly Highlight: Speedrun Showdown
+## 🧠 Pro Tips
 
-This week’s featured challenge: **Breakout – Clear all bricks in under 45 seconds!**  
-Post your time in the in‑game chat (room code: **SPEEDRUN**) and the fastest 3 players will get a special pixel trophy added to their avatar.  
-*Challenge ends Sunday 23:59 UTC.*
-
----
-
-## 💬 Motivational Quote
-
-> *“The only way to win is to learn faster than your opponents.”*  
-> — *Anonymous Arcade Legend*
+- **Quick Room Swap**: Press `Ctrl+R` (or `Cmd+R`) while in a room to instantly generate a new room code — great for tournaments.
+- **Avatar Upload Trick**: Drag & drop a 32×32 PNG directly onto the avatar picker to bypass the file dialog.
+- **Chat Commands**: Type `/roll` in chat to roll a 20‑sided die, or `/stats` to see your personal win/loss ratio.
+- **Mobile Gaming**: Enable “landscape lock” on your phone for a wider playfield — the game auto‑adapts to screen orientation.
+- **Silent Mode**: Press `M` during any game to toggle sound effects off (handy for late‑night sessions).
+- **Scoreboard Easter Egg**: Click the trophy icon 5 times in a row to unlock a secret confetti animation.
 
 ---
 
-## 📜 Changelog – 2026‑07‑29
+## 📅 Changelog — 2026-07-29
 
-### v1.0.1 (Latest)
-- **New** – Added `Pro Tips` section to README (this one!).
-- **New** – Weekly Highlight challenges now displayed in the lobby banner.
-- **Fixed** – Pong ball clipping through paddle at extreme angles.
-- **Fixed** – Snake leaderboard not updating when players tie.
-- **Improved** – Mobile touch controls now support swipe gestures for Pong.
-- **Improved** – Chat panel auto‑scrolls to newest messages.
+### v1.0.1 – The “Pixel Polish” Update
+- **Added** a new “Pro Tips” section to the README.
+- **Improved** mobile touch controls for Breakout – paddle now follows finger drag smoothly.
+- **Fixed** rare race condition where scores could desync when two players joined simultaneously.
+- **Optimized** WebRTC signalling to use a more reliable fallback when STUN fails.
+- **Added** `/roll` and `/stats` chat commands.
+- **Updated** ASCII art banner to include the version number.
+
+Full history: [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
-## 🤝 Contributing
+## 🏆 Weekly Highlight
 
-GameRoom is open source and we love contributions!  
-Check out the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  
-Feel free to open issues for bugs or feature requests, or submit a PR with your own arcade game addition.
+> **Feature of the Week:** The new “Tournament Mode” (experimental) – create a bracket with up to 8 players and automatically advance winners. Launching next Friday. Sneak peek available on the `tournament` branch.
+
+---
+
+## 💬 Get Involved
+
+- 🐛 Found a bug? [Open an issue](https://github.com/shubhyagami/gameroom/issues)
+- 💡 Have an idea? [Start a discussion](https://github.com/shubhyagami/gameroom/discussions)
+- 👩‍💻 Want to contribute? Check out [CONTRIBUTING.md](CONTRIBUTING.md) — PRs are welcome!
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-> *GameRoom – Where every pixel has a story.*
+> *“The best games are the ones you play with friends — and maybe a little bit of trash talk.”*  
+> — GameRoom Team
