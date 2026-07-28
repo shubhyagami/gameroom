@@ -16,6 +16,8 @@
 [![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=★%20Stars)](https://github.com/shubhyagami/gameroom)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/pulls)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square)](https://github.com/shubhyagami/gameroom)
 
 ---
 
@@ -85,28 +87,68 @@ python3 -m http.server 8080
 # Then visit http://localhost:8080
 ```
 
-### Option 3: Live Server (VS Code)
+---
 
-1. Install the **Live Server** extension.
-2. Right‑click `index.html` → **Open with Live Server**.
+## 🏆 Pro Tips
 
-That’s it. You’re in the GameRoom.
+Get an edge over your opponents with these insider tricks:
+
+### 🐍 Snake
+- **Corner camping** – In the late game, stay near walls to force opponents into your tail.
+- **Speed burst** – Hold the boost key (spacebar) to dash forward, but beware of your own trail.
+- **Power‑up priority** – Grab the **speed‑down** power‑up when you’re leading; it slows everyone else.
+
+### 🏓 Pong
+- **Angle your shots** – Hit the ball near the edge of your paddle for a sharper bounce.
+- **CPU bait** – Against AI, send the ball high then low – the bot will overcorrect.
+- **Serve trick** – Press the serve button at the exact moment the ball flashes to launch it at max speed.
+
+### 🧱 Breakout
+- **Catch the bonus** – Let the ball bounce off the very top of the paddle to earn a multiball power‑up.
+- **Brick patterns** – Destroy bricks in a zigzag to create chain reactions when the ball ricochets.
+- **Laser aim** – If you have the laser upgrade, fire straight up to clear a column in one shot.
 
 ---
 
-## 🤓 Did You Know?
+## 🎯 Weekly Highlight: Speedrun Showdown
 
-- The **Snake** game in GameRoom was originally written in just 200 lines of pure JavaScript — no frameworks, no libraries.
-- WebRTC, which powers the multiplayer rooms, was originally invented for video conferencing. GameRoom repurposes it for **real‑time game state sync** with <50ms latency.
-- All game sprites are drawn using CSS `box-shadow` tricks — there’s not a single PNG inside the project.
-- The leaderboard stores your all‑time best scores in your browser’s **IndexedDB**, so they survive page reloads.
-
----
-
-## 📅 Last Updated
-
-**2026‑07‑25** — Added Breakout multiplayer support and room chat history.
+This week’s featured challenge: **Breakout – Clear all bricks in under 45 seconds!**  
+Post your time in the in‑game chat (room code: **SPEEDRUN**) and the fastest 3 players will get a special pixel trophy added to their avatar.  
+*Challenge ends Sunday 23:59 UTC.*
 
 ---
 
-*Built with ❤️ by [shubhyagami](https://github.com/shubhyagami). Contributions, issues, and forks are always welcome!*
+## 💬 Motivational Quote
+
+> *“The only way to win is to learn faster than your opponents.”*  
+> — *Anonymous Arcade Legend*
+
+---
+
+## 📜 Changelog – 2026‑07‑29
+
+### v1.0.1 (Latest)
+- **New** – Added `Pro Tips` section to README (this one!).
+- **New** – Weekly Highlight challenges now displayed in the lobby banner.
+- **Fixed** – Pong ball clipping through paddle at extreme angles.
+- **Fixed** – Snake leaderboard not updating when players tie.
+- **Improved** – Mobile touch controls now support swipe gestures for Pong.
+- **Improved** – Chat panel auto‑scrolls to newest messages.
+
+---
+
+## 🤝 Contributing
+
+GameRoom is open source and we love contributions!  
+Check out the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.  
+Feel free to open issues for bugs or feature requests, or submit a PR with your own arcade game addition.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+> *GameRoom – Where every pixel has a story.*
