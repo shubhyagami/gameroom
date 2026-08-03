@@ -59,55 +59,73 @@ flowchart LR
     H --> I[📊 Scoreboard Updates]
     I --> J[🔄 Play Again?]
     J -->|Yes| D
-    J -->|No| K
+    J -->|No| K[🚪 Exit]
 ```
 
 ---
 
-## 🎮 Pro Tips & Tricks
+## 🚀 Quick Start
 
-Unlock your inner arcade legend with these battle‑tested strategies:
+Get GameRoom running in under a minute:
 
-| 🕹️ Game | 💡 Pro Tip |
-|---------|------------|
-| **Snake** | Corner the prey: let your tail block escape routes while you accelerate. |
-| **Pong** | Vary your paddle return angle by moving vertically at the last moment — predictable returns are easy prey. |
-| **Breakout** | Aim for the top bricks first; the ball will ricochet unpredictably and often skip layers. |
-| **All Games** | Use the chat to distract opponents — a well‑timed “GG” can throw off their concentration! |
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shubhyagami/gameroom.git
+   cd gameroom
+   ```
 
-> “The best players don't just react — they predict. Watch your opponent's patterns and turn their strengths into weaknesses.”
+2. **Open in your browser**
+   - Simply double-click `index.html` – no server needed!
+   - For the best multiplayer experience, share your local IP with friends, or use a tool like `ngrok` to expose your local server temporarily.
 
----
+3. **Create or join a room**
+   - Type a memorable room code (e.g., `GAME2026`) and click **Create Room**.
+   - Friends enter the same code and click **Join Room**.
 
-## 📅 Changelog – 2026-08-01
-
-### 🆕 New & Improved
-- **New Game: Bomberman (Beta)** – Blast your way through destructible walls in 2‑player local mode. (Activate with `/bomberman` in lobby.)
-- **Room Persistence** – Rooms now survive a browser refresh; rejoin within 30 seconds to resume your game.
-- **Mobile Touch Controls** – Swipe‑to‑steer for Snake and tap‑and‑hold for Pong paddles added.
-
-### 🔧 Fixed
-- Fixed rare desync in Breakout where the ball would phase through the paddle.
-- Chat no longer steals keyboard focus during gameplay.
-- Avatar upload now respects file size limits (max 2 MB).
-
-### ⚡ Performance
-- Reduced initial load time by 40% through lazy‑loading game assets.
-- WebRTC connection handshake optimized – room join time under 1 second.
+4. **Pick a game and play!**
+   - Once everyone is in the lobby, select a game and start battling.
 
 ---
 
-## 📊 Fun Project Stats
+## 💡 Pro Tips
 
-| Metric | Value |
-|--------|-------|
-| 🎮 Games Played (all time) | 1,337 (and counting) |
-| 🏅 Highest Score (Snake) | 4,221 points |
-| 🕐 Average Session Length | 18 minutes |
-| 🌍 Countries Reached | 12 |
-| 👥 Concurrent Players Record | 7 |
-| 🐛 Bugs Squashed This Month | 9 |
+- **Optimise your network** – WebRTC works best on a stable Wi‑Fi or LAN connection. If players are lagging, try switching to a wired connection.
+- **Customise your avatar early** – Head to the lobby settings before the game starts to stand out on the leaderboard.
+- **Use the chat strategically** – A well‑timed taunt can shake your opponent’s focus. But remember: fair play wins in the long run.
+- **Mobile controls** – On phones, the joystick and buttons are touch‑optimised. Hold your device landscape for the best view.
+- **Refresh to reset** – If you ever get stuck or want a clean slate, just refresh the page. The room will persist as long as at least one player remains.
 
 ---
 
-*GameRoom – because real friends don’t let friends download apps.*
+## 📅 Changelog
+
+### [v1.0.1] – 2026-08-04
+#### Added
+- New **Pro Tips** section in the README for better user experience.
+- Quick Start guide with step‑by‑step instructions.
+- Motivational quote to keep the arcade spirit alive.
+
+#### Fixed
+- Minor layout shift on mobile when the chat panel is open.
+- Pong ball collision edge case that could cause the ball to get stuck.
+
+#### Changed
+- Upgraded WebRTC signalling logic for faster room creation.
+- Updated default avatar set with 4 new pixel characters.
+
+---
+
+> *“The best games are the ones we play together. GameRoom is just the screen – the real magic is the people across it.”*  
+> — Shubhya’s Gaming Manifesto
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Whether it’s fixing a bug, adding a new game, or improving the UI, please open an issue or pull request. Check our [contributing guidelines](CONTRIBUTING.md) for details.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
