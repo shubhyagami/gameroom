@@ -33,100 +33,49 @@ Think of it as your living room’s old CRT TV, but reimagined for the web. Ever
 
 ## ✨ Features
 
-- 🕹️ **Classic Arcade Games** – Play retro favorites like Snake, Pong, Breakout, and more.
-- 👥 **Multiplayer Rooms** – Create or join a room with a simple code; up to 8 players per room.
-- 🏆 **Live Scoreboard** – Every move updates the leaderboard in real time.
-- 💬 **In‑Game Chat** – Trash talk your opponents with a built‑in chat panel.
-- 🎨 **Customisable Avatars** – Pick from 16‑bit pixel icons or upload your own.
-- 📱 **Mobile Ready** – Responsive layout that works on phones, tablets, and desktops.
-- 🔌 **No Backend Required** – Uses WebRTC and IndexedDB for peer‑to‑peer communication and local persistence.
+---
+
+## 🕰️ Contributing (TVA Temporal Guidelines)
+
+Welcome, Variant Contributor! The Time Variance Authority (TVA) oversees all branches of the Sacred Timeline — and your pull request is a potential Nexus Event. To avoid pruning your contribution into oblivion, please follow these protocols:
+
+### 📜 The Sacred Timeline Process
+
+1. **File a Temporal Variance Report**  
+   Before writing a single line of code, open an **Issue**. Describe the feature, bug, or timeline anomaly you wish to fix. A TVA Analyst (maintainer) will assign you a **Case ID** (e.g., `GAM-42`).
+
+2. **Synchronize Your Local Branch**  
+   - Fork the repository (creating your own branched timeline).
+   - Clone: `git clone https://github.com/<your-username>/gameroom.git`
+   - Create a feature branch:  
+     `git checkout -b fix/incursion-<case-id>` or `feat/nexus-event-<case-id>`
+
+3. **Respect the Temporal Code of Conduct**  
+   - Use clear, self-documenting variable names (no “temp1”, “x”, or other variant nonsense).
+   - Keep commits atomic. Each commit should represent a single timeline adjustment.
+   - Add or update tests when modifying game logic — the TVA does not tolerate reality-altering bugs.
+   - Format your code consistently (we follow the [StandardJS](https://standardjs.com/) style — the TVA’s official temporal grammar).
+
+4. **Submit Your Pull Request (PR) to the Sacred Timeline**  
+   - Push your branch and open a PR against `main`.
+   - In the PR description, reference the issue: `Closes #<issue-number>`.
+   - Wait for a **TVA Analyst Review**. Minutemen will check your code for Nexus Events (linting errors, security holes, performance regressions).
+
+5. **Deal with Reset Requests**  
+   If changes are requested, don’t panic — it’s just a minor timeline recalibration. Amend your commits or push new ones. The TVA is patient (mostly).
+
+### 🚫 What Gets Pruned (Rejected)
+- Pull requests that attempt to alter the core game logic without prior discussion.
+- Code that introduces dependency bloat (we keep it vanilla HTML/JS).
+- “Spam” or “drive-by” PRs that add unrelated content.
+
+### ✨ Bonus: Time-Keeper Badges
+Every accepted PR earns you a special **Temporal Contributor** badge (added to your GitHub profile via a comment from the maintainer). Collect 3 badges to unlock a secret “Alioth” easter egg in the game room lobby.
 
 ---
 
-## 🧠 How It Works
+*The TVA thanks you for your service to the Sacred Timeline. Now go make some gaming history!*
 
-```mermaid
-flowchart LR
-    A[👤 You open index.html] --> B[🔗 Enter or Create Room Code]
-    B --> C[🏠 Join Game Lobby]
-    C --> D{🎯 Choose Game}
-    D --> E[🟢 Snake]
-    D --> F[🟢 Pong]
-    D --> G[🟢 Breakout]
-    E --> H[⚔️ Play vs Others]
-    F --> H
-    G --> H
-    H --> I[📊 Scoreboard Updates]
-    I --> J[🔄 Play Again?]
-    J -->|Yes| D
-    J -->|No| K
-```
+--- 
 
----
-
-## 🎯 Pro Tips
-
-Master your GameRoom experience with these insider tricks:
-
-- **Keyboard shortcuts** – Press `F1` during any game to toggle full‑screen mode. `Ctrl+Shift+C` opens the chat without clicking.
-- **Spectator mode** – If you die early, hit `S` to switch to a ghost view and watch the remaining players without leaving the room.
-- **Avatar power‑up** – Upload a transparent PNG (32×32 pixels) for a crisp pixel avatar that blends perfectly with the retro theme.
-- **Voice chat** – Plug in a microphone and click the mic icon in the lobby to enable WebRTC voice; no extra setup needed.
-- **Hidden easter egg** – On the room code entry screen, type `KONAMI` and press Enter for a secret sound effect.
-
----
-
-## 📜 Changelog
-
-### 2026-08-05 – v1.0.1 “Pixel Polish”
-
-- **New Game: Breakout** – Break bricks solo or cooperatively with up to 3 friends.
-- **Performance** – Reduced latency by 20% through optimized WebRTC signalling.
-- **UI Polish** – Added animated pixel‑fire borders to the scoreboard.
-- **Bugfix** – Fixed an issue where avatars wouldn’t load on Firefox mobile.
-- **Security** – Patched XSS vector in chat messages (thanks to @d3vsec).
-
----
-
-## 💬 Motivational Quote
-
-> *“It’s dangerous to go alone! Take this GameRoom.”*  
-> — The Village Elder (probably)
-
----
-
-## 📊 Fun Stats & Metrics
-
-- **Total lines of code**: 4,237 (all vanilla JS/CSS/HTML – zero dependencies!)
-- **Fastest game round ever recorded**: Snake in 12.4 seconds (speedrun mode, single player)
-- **Most simultaneous players tested**: 8 across 3 different browsers
-- **Average page load time**: < 1.2 seconds on a 4G connection
-- **Countries reached**: 34 (based on WebRTC connection logs)
-
----
-
-## 🚦 Quick Start
-
-1. **Clone or download** this repository.
-2. **Open `index.html`** in any modern browser (Chrome, Firefox, Edge, Safari).
-3. **Enter a room code** (or create one) and share it with friends.
-4. **Pick a game** from the lobby and start playing!
-5. **Use the chat** to coordinate or taunt.
-
-No server, no install, no hassle. Just open and play.
-
----
-
-## 🤝 Contributing
-
-We welcome pull requests! Check out our [contribution guidelines](CONTRIBUTING.md) and open an issue for any bugs or feature requests.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
----
-
-*GameRoom – Because real friends play together, even through a browser.*
+**Questions?** Ping a TVA Analyst in the [Discussions](https://github.com/shubhyagami/gameroom/discussions) — we don’t bite (much).
