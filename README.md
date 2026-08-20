@@ -1,30 +1,25 @@
 # 🎮 GameRoom
 
-[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=★%20Stars)](https://github.com/shubhyagami/gameroom)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/pulls)
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square)](https://github.com/shubhyagami/gameroom)
-[![Game Count](https://img.shields.io/badge/games-3%2B-blueviolet?style=flat-square)](https://github.com/shubhyagami/gameroom)
-[![Peak Players](https://img.shields.io/badge/max%20players-8-ff69b4?style=flat-square)](https://github.com/shubhyagami/gameroom)
 
-## What is GameRoom?
+**GameRoom** is a browser-based multiplayer arcade. You and your friends can drop in via a shared room link and compete for the top of the leaderboard—no downloads or sign-ups required.
 
-**GameRoom** is a browser-based multiplayer arcade lounge. You and your friends can drop in, grab a virtual joystick, and battle for the top of the leaderboard — no downloads, no sign-ups, just pure pixel-perfect fun.
-
-Every game runs on plain HTML, CSS, and JavaScript, making it fast, lightweight, and compatible with any modern web browser.
+Built entirely with vanilla HTML, CSS, and JavaScript, GameRoom is fast, lightweight, and compatible with any modern web browser.
 
 ## Features
 
-- **Instant Access:** No downloads or accounts required. Just share a room link and start playing.
-- **Multiplayer Support:** Enjoy real-time competition with up to 8 players per room.
-- **Classic Arcade Games:** 3+ timeless games available, with more regularly added.
+- **Instant Access:** Share a room link and start playing immediately.
+- **Multiplayer Support:** Compete in real-time with up to 8 players per room.
+- **Classic Arcade Games:** 3+ timeless games included, with more added regularly.
 - **Live Leaderboards:** Track high scores and crown your room's champion.
-- **Lightweight & Vanilla:** Built entirely with vanilla HTML, CSS, and JS for zero bloat and maximum performance.
+- **Lightweight & Vanilla:** Zero dependencies, zero bloat, maximum performance.
 
 ## Getting Started
 
-Getting a local copy of GameRoom up and running takes just a few minutes. 
+Getting a local copy of GameRoom up and running takes just a few minutes.
 
 ### Prerequisites
 
@@ -39,7 +34,7 @@ Getting a local copy of GameRoom up and running takes just a few minutes.
    cd gameroom
    ```
 
-2. **Install dependencies (if applicable):**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
