@@ -2,17 +2,17 @@
 
 [![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=★%20Stars)](https://github.com/shubhyagami/gameroom)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/shubhyagami/gameroom/pulls)
+[![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=★%20Stars)](https://github.com/shubhyagami/gameroom)
 
-**GameRoom** is a browser-based multiplayer arcade. You and your friends can drop in via a shared room link and compete for the top of the leaderboard—no downloads or sign-ups required.
+**GameRoom** is a browser-based multiplayer arcade. Drop in via a shared room link and compete for the top of the leaderboard—no downloads or sign-ups required.
 
-Built entirely with vanilla HTML, CSS, and JavaScript, GameRoom is fast, lightweight, and compatible with any modern web browser.
+Built entirely with vanilla HTML, CSS, and JavaScript, GameRoom is fast, lightweight, and runs in any modern web browser.
 
 ## Features
 
 - **Instant Access:** Share a room link and start playing immediately.
-- **Multiplayer Support:** Compete in real-time with up to 8 players per room.
+- **Real-time Multiplayer:** Compete with up to 8 players per room.
 - **Classic Arcade Games:** 3+ timeless games included, with more added regularly.
 - **Live Leaderboards:** Track high scores and crown your room's champion.
 - **Lightweight & Vanilla:** Zero dependencies, zero bloat, maximum performance.
@@ -76,6 +76,11 @@ Contributions are what make the open-source community such an amazing place to l
 - Before writing code for a new feature or major bug fix, please open an **Issue** to discuss it with the maintainers.
 - Avoid introducing unnecessary dependencies. We aim to keep GameRoom vanilla and lightweight.
 - Spam, drive-by, or unrelated PRs will be rejected to keep the project focused.
+
+## Changelog
+
+### [Unreleased]
+- Refined README for clarity and better onboarding.
 
 ## License
 
