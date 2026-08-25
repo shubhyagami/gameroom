@@ -8,18 +8,14 @@
 **A Browser-Based Multiplayer Arcade**
 =====================================
 
-Drop in via a shared room link and compete for the top of the leaderboard with friends – no downloads or sign-ups required.
+Experience the thrill of classic arcade games in a shared browser-based environment, where friends can compete for the top spot on the leaderboard without the need for downloads or sign-ups.
 
-**Fast, Lightweight, and Vanilla**
---------------------------------
+**Features**
+------------
 
-Built entirely with vanilla HTML, CSS, and JavaScript, GameRoom runs in any modern web browser.
-
-## Key Features
-
-- **Instant Access:** Share a room link and start playing immediately.
-- **Real-time Multiplayer:** Compete with up to 8 players per room.
-- **Classic Arcade Games:** 3+ timeless games included, with more added regularly.
+- **Instant Access:** Join a game via a shared room link and start competing immediately.
+- **Real-time Multiplayer:** Compete with up to 8 players per room for the top spot on the leaderboard.
+- **Classic Arcade Games:** Enjoy 3+ timeless games, with new games added regularly to keep the experience fresh.
 - **Live Leaderboards:** Track high scores and crown your room's champion.
 
 ## Getting Started
@@ -39,49 +35,38 @@ Get a local copy of GameRoom up and running in just a few minutes.
    git clone https://github.com/shubhyagami/gameroom.git
    cd gameroom
    ```
-
 2. **Install dependencies:**
    ```bash
    npm install
    ```
-
 3. **Start the development server:**
    ```bash
    npm run dev
    ```
-
 4. Open your browser and navigate to `http://localhost:3000` to access your local GameRoom.
 
 ## Contributing
 ------------
 
-Contributions are what make GameRoom amazing. Your contributions are greatly appreciated.
+Your contributions are greatly appreciated and play a crucial role in making GameRoom amazing.
 
-### Making a Contribution
+### Contributing Guidelines
 
-1. **Fork the Project** and create a new branch:
-   ```bash
-   git checkout -b feat/new-game
-   ```
-2. **Code Standards:** 
-   - Use clear, self-documenting variable names.
-   - Keep commits atomic; each commit represents a single logical change.
-   - Add or update tests when modifying game logic.
-   - Use [StandardJS](https://standardjs.com) for code formatting.
-3. **Commit your Changes:**
-   ```bash
-   git commit -m 'Add new game logic'
-   ```
-4. **Push to the Branch:**
-   ```bash
-   git push origin feat/new-game
-   ```
-5. **Open a Pull Request** against the `main` branch, referencing related issues in your PR description using the `Closes #<issue-number>` format.
-
-### Guidelines
-
-- Before writing code for a new feature, open an **Issue** to discuss it with the maintainers.
-- Avoid introducing unnecessary dependencies. We keep GameRoom vanilla and lightweight.
+- **Fork the Project** and create a new branch:
+  ```bash
+  git checkout -b feat/new-game
+  ```
+- **Code Standards:**
+  - Use clear, self-documenting variable names.
+  - Keep commits atomic; each commit represents a single logical change.
+  - Add or update tests when modifying game logic.
+  - Use [StandardJS](https://standardjs.com) for code formatting.
+- **Make a Contribution:**
+  1. Push to the branch:
+     ```bash
+     git push origin feat/new-game
+     ```
+  2. Open a Pull Request** against the `main` branch, referencing related issues in your PR description using the `Closes #<issue-number>` format.
 
 ## Change Log
 ------------
@@ -92,7 +77,7 @@ Contributions are what make GameRoom amazing. Your contributions are greatly app
 ## License
 -----
 
-Distributed under the MIT License. See `LICENSE` for details.
+GameRoom is distributed under the MIT License. See `LICENSE` for details.
 
 ## Contact & Support
 ------------------
