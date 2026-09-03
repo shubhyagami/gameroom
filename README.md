@@ -1,54 +1,57 @@
-# 🎮 GameRoom – Browser‑Based Multiplayer Arcade  
+# GameRoom – Browser‑Based Multiplayer Arcade
 
 Play classic arcade games with friends directly in your browser – no downloads or sign‑ups required.
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build)&nbsp;
-![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)&nbsp;
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)&nbsp;
-![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)&nbsp;
-![Node](https://img.shields.io/badge/Node-20.x-brightgreen?style=flat-square)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)](https://github.com/shubhyagami/gameroom/actions)
+[![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+[![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)](https://github.com/shubhyagami/gameroom/stargazers)
+[![Node](https://img.shields.io/badge/Node-20.x-brightgreen?style=flat-square)](https://nodejs.org)
 
 ---
 
-## 📖 Overview
+## Overview
 
-GameRoom is a lightweight, open‑source platform that lets you host and play retro arcade games in real‑time multiplayer mode. Share a link, grab a few friends, and the game starts instantly – no registration or installations needed.
+GameRoom is a lightweight, open‑source platform that lets you host and play retro arcade games in real‑time multiplayer mode.  
+- Share a link, bring friends, and start playing instantly.  
+- No registration, no installations, no plugins.
 
 ---
 
-## 🚀 Features
+## Features
 
 | Feature | Description |
-|---------|--------------|
-| **Instant Room Access** | Share a URL and get in the game immediately. |
-| **Real‑time Multiplayer** | Up to 8 players per room, fully synchronized. |
-| **Classic Game Collection** | Three core titles at launch, with a roadmap for new games. |
-| **Live Leaderboards** | In‑room score tracking that updates in real time. |
-| **Open Source & Extensible** | Built with Vite, TypeScript, and Socket.IO – easily add your own games. |
+|--------|-------------|
+| **Instant Room Access** | Join a game by opening a URL – no signup required. |
+| **Real‑time Multiplayer** | Up to 8 players per room, full state sync via Socket.IO. |
+| **Classic Game Collection** | Three core titles at launch; new games can be added. |
+| **Live Leaderboards** | Scores update in real time and persist per room. |
+| **Extensible Architecture** | Built with Vite, TypeScript, and Socket.IO – add your own games easily. |
 
 ---
 
-## 📦 Getting Started
+## Quick Start
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/shubhyagami/gameroom.git && cd gameroom
+# 1️⃣ Clone the repo
+git clone https://github.com/shubhyagami/gameroom.git
+cd gameroom
 
 # 2️⃣ Install dependencies
 npm ci
 
-# 3️⃣ Run the development server
+# 3️⃣ Run the dev server
 npm run dev
 
 # 4️⃣ Open your browser
 http://localhost:3000
 ```
 
-That’s it! The code for the dev server lives in `src/`. When you’re ready to host, build and deploy with your favourite platform (Netlify, Vercel, etc.).
+The source lives in `src/`. When you’re ready to host, run `npm run build` and deploy the `dist/` folder to a static site provider (Netlify, Vercel, GitHub Pages, etc.).
 
 ---
 
-## 🛠 Development
+## Development
 
 | Script | Purpose |
 |--------|---------|
@@ -57,42 +60,42 @@ That’s it! The code for the dev server lives in `src/`. When you’re ready to
 | `npm run lint`  | Run ESLint (StandardJS) |
 | `npm test`      | Run Jest unit tests |
 
-The repository follows the [StandardJS](https://standardjs.com) style guide – no semicolons, single quotes, and the lint step runs automatically.
+The project follows the [StandardJS](https://standardjs.com) style guide – no semicolons, single quotes, lint runs automatically.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-1. Fork and clone the repo.  
+1. Fork and clone.  
 2. Create a feature branch: `git checkout -b feat/<short-description>`.  
-3. Keep the code style: StandardJS, single quotes, no semicolons.  
-4. Add tests when adding new logic.  
-5. Push and open a Pull Request against `main`.  
-6. Reference an issue with `Closes #<number>` to close it automatically.
+3. Keep the StandardJS style.  
+4. Write tests for new logic.  
+5. Push and open a PR against `main`.  
+6. Close an issue automatically by referencing it in the PR title/body (`Closes #<number>`).
 
-All contributions are welcome, whether it’s bug reports, feature ideas, documentation improvements, or tests.
+All contributions are welcome: bug reports, feature ideas, documentation, tests, or new games.
 
 ---
 
-## 📜 Changelog
+## Changelog
 
 ### v1.0.0 – 2026‑08‑28  
 - Initial public release.  
-- Three classic arcade games available.  
-- Real‑time synchronization for up to 8 players.  
+- Three classic arcade games included.  
+- Real‑time sync for up to 8 players.  
 - Live leaderboards per room.
 
 ---
 
-## 📄 License
+## License
 
 MIT © [shubhyagami](https://github.com/shubhyagami)
 
 ---
 
-## 📞 Support & Community
+## Community & Support
 
-- **Issues**: https://github.com/shubhyagami/gameroom/issues  
-- **Discussions**: https://github.com/shubhyagami/gameroom/discussions  
-- **Discord**: https://discord.gg/gameroom  
-- **Homepage**: https://gameroom.example.com (placeholder)
+- Issues: <https://github.com/shubhyagami/gameroom/issues>  
+- Discussions: <https://github.com/shubhyagami/gameroom/discussions>  
+- Discord: <https://discord.gg/gameroom>  
+- Live demo: <https://gameroom.example.com> *(placeholder)*
