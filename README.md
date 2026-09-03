@@ -1,6 +1,6 @@
 # GameRoom – Browser‑Based Multiplayer Arcade
 
-Play classic arcade games with friends directly in your browser – no downloads or sign‑ups required.
+Play classic arcade games with friends right in your browser – no downloads, no sign‑ups, no plugins.
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)](https://github.com/shubhyagami/gameroom/actions)
 [![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)](LICENSE)
@@ -10,15 +10,13 @@ Play classic arcade games with friends directly in your browser – no downloads
 
 ---
 
-## Overview
+## 🎮 Overview
 
 GameRoom is a lightweight, open‑source platform that lets you host and play retro arcade games in real‑time multiplayer mode.  
-- Share a link, bring friends, and start playing instantly.  
+- Share a link, invite friends, and start playing instantly.  
 - No registration, no installations, no plugins.
 
----
-
-## Features
+## ✨ Key Features
 
 | Feature | Description |
 |--------|-------------|
@@ -28,30 +26,32 @@ GameRoom is a lightweight, open‑source platform that lets you host and play re
 | **Live Leaderboards** | Scores update in real time and persist per room. |
 | **Extensible Architecture** | Built with Vite, TypeScript, and Socket.IO – add your own games easily. |
 
----
-
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
-# 1️⃣ Clone the repo
+# 1️⃣ Clone the repository
 git clone https://github.com/shubhyagami/gameroom.git
 cd gameroom
 
 # 2️⃣ Install dependencies
 npm ci
 
-# 3️⃣ Run the dev server
+# 3️⃣ Run the development server
 npm run dev
 
 # 4️⃣ Open your browser
 http://localhost:3000
 ```
 
-The source lives in `src/`. When you’re ready to host, run `npm run build` and deploy the `dist/` folder to a static site provider (Netlify, Vercel, GitHub Pages, etc.).
+When you’re ready to host, build the production assets:
 
----
+```bash
+npm run build
+```
 
-## Development
+Deploy the `dist/` folder to any static site host (Netlify, Vercel, GitHub Pages, etc.).
+
+## 🛠️ Development
 
 | Script | Purpose |
 |--------|---------|
@@ -60,24 +60,20 @@ The source lives in `src/`. When you’re ready to host, run `npm run build` and
 | `npm run lint`  | Run ESLint (StandardJS) |
 | `npm test`      | Run Jest unit tests |
 
-The project follows the [StandardJS](https://standardjs.com) style guide – no semicolons, single quotes, lint runs automatically.
+The code follows the **StandardJS** style guide – no semicolons, single quotes, lint runs automatically.
 
----
+## 🤝 Contributing
 
-## Contributing
-
-1. Fork and clone.  
+1. Fork the repo and clone it locally.  
 2. Create a feature branch: `git checkout -b feat/<short-description>`.  
 3. Keep the StandardJS style.  
-4. Write tests for new logic.  
+4. Write unit tests for new logic.  
 5. Push and open a PR against `main`.  
 6. Close an issue automatically by referencing it in the PR title/body (`Closes #<number>`).
 
-All contributions are welcome: bug reports, feature ideas, documentation, tests, or new games.
+All contributions are welcome: bug reports, feature ideas, documentation updates, tests, or new games.
 
----
-
-## Changelog
+## 📦 Changelog
 
 ### v1.0.0 – 2026‑08‑28  
 - Initial public release.  
@@ -85,15 +81,11 @@ All contributions are welcome: bug reports, feature ideas, documentation, tests,
 - Real‑time sync for up to 8 players.  
 - Live leaderboards per room.
 
----
-
-## License
+## 📄 License
 
 MIT © [shubhyagami](https://github.com/shubhyagami)
 
----
-
-## Community & Support
+## 🤝 Community & Support
 
 - Issues: <https://github.com/shubhyagami/gameroom/issues>  
 - Discussions: <https://github.com/shubhyagami/gameroom/discussions>  
