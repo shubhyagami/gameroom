@@ -1,6 +1,6 @@
 # GameRoom – Browser‑Based Multiplayer Arcade  
 
-Play classic arcade titles with friends right in the browser – no downloads, sign‑ups or plugins.  
+Play classic arcade titles with friends right in the browser – no downloads, sign‑ups, or plugins required.
 
 ![CI](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)  
 ![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)  
@@ -16,7 +16,7 @@ Play classic arcade titles with friends right in the browser – no downloads, s
 
 GameRoom is a lightweight, open‑source framework that lets you host and play retro arcade games in real‑time multiplayer mode, all inside a web browser.  
 - Share a link and start playing instantly.  
-- No sign‑ups, installations, or plugins required.
+- No sign‑ups, installations, or plugins are required.
 
 ---
 
@@ -26,7 +26,7 @@ GameRoom is a lightweight, open‑source framework that lets you host and play r
 |---|---|
 | **Instant Room Access** | Join a game with a single click – no account needed. |
 | **Real‑time Multiplayer** | Up to 8 players per room, state sync via Socket.IO. |
-| **Built‑in Game Collection** | Three classic arcade games included by default. |
+| **Built‑in Game Collection** | Three classic arcade games are included out of the box. |
 | **Live Leaderboards** | Scores update in real time and persist per room. |
 | **Extensible API** | Add new games with minimal effort using Vite, TypeScript, and Socket.IO. |
 
@@ -46,7 +46,7 @@ npm ci
 npm run dev
 ```
 
-Open **http://localhost:3000** in your browser and share the URL with your friends.
+Open **http://localhost:3000** in your browser and share the URL with friends.
 
 ### Build for production
 
@@ -67,7 +67,7 @@ Deploy the `dist/` folder to any static host (Netlify, Vercel, GitHub Pages, etc
 | `npm run lint` | Run ESLint (StandardJS) |
 | `npm test` | Run Jest unit tests |
 
-The codebase follows the **StandardJS** style guide (no semicolons, single quotes). Linting runs automatically on CI.
+The codebase follows the **StandardJS** style guide (single quotes, no semicolons). Linting runs automatically on CI.
 
 ---
 
@@ -104,5 +104,3 @@ MIT © [shubhyagami](https://github.com/shubhyagami)
 - Issues: <https://github.com/shubhyagami/gameroom/issues>  
 - Discussions: <https://github.com/shubhyagami/gameroom/discussions>  
 - Discord: <https://discord.gg/gameroom>  
-
----
