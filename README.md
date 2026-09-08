@@ -1,62 +1,55 @@
-# GameRoom – Browser‑Based Multiplayer Arcade  
+# GameRoom – Browser‑Based Multiplayer Arcade
 
-Play classic arcade titles with friends right in the browser – no downloads, sign‑ups, or plugins required.
+Play classic arcade games with teammates directly in the browser—no downloads, accounts, or plugins required.
 
-![CI](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)  
-![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)  
-![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)  
-
----
-
-## 🎮 What is GameRoom?
-
-GameRoom is a lightweight, open‑source framework that lets you host and play retro arcade games in real‑time multiplayer mode, all within a web browser.
-
-- **Instant play** – share a link and start gaming immediately.  
-- **Zero friction** – no sign‑ups, no downloads, no browser plugins.  
-- **Scalable** – up to 8 players per room, synchronized via Socket.IO.  
+![CI](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)
+![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)
+![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)
 
 ---
 
-## ✨ Key Features
+## What is GameRoom?
+
+GameRoom is an open‑source framework that lets you host and play retro arcade titles in real‑time multiplayer mode, all within a web browser.
+
+- **Instant play** – share a link and start gaming instantly.  
+- **Zero friction** – no sign‑ups, downloads, or browser plugins.  
+- **Scalable** – up to eight players per room, synchronized via Socket.IO.
+
+---
+
+## Key Features
 
 | Feature | Description |
 |---------|--------------|
 | One‑click rooms | Create or join a session with a single URL. |
-| Real‑time multiplayer | Up to 8 players per room; state sync via Socket.IO. |
-| Built‑in library | Three classic arcade games included out of the box. |
+| Real‑time multiplayer | Up to eight players per room, state sync via Socket.IO. |
+| Built‑in library | Three classic arcade games delivered out of the box. |
 | Live leaderboards | Scores update in real time and persist per room. |
 | Extensible | Add new games with minimal effort using Vite, TypeScript, and Socket.IO. |
 
 ---
 
-## 🚀 Quick Start
+## 📦 Getting Started
 
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/shubhyagami/gameroom.git
-cd gameroom
+1. **Clone the repo**  
+   `git clone https://github.com/shubhyagami/gameroom.git`
 
-# 2️⃣ Install dependencies
-npm ci
+2. **Install dependencies**  
+   `cd gameroom`  
+   `npm ci`
 
-# 3️⃣ Launch the dev server
-npm run dev
-```
+3. **Run the development server**  
+   `npm run dev`  
+   Open `http://localhost:3000`, copy the URL, and share it with friends.
 
-Open **http://localhost:3000** in your browser, then copy the URL and share it with friends.
-
-### Build for production
-
-```bash
-npm run build
-```
-
-Deploy the generated `dist/` folder to any static host (Netlify, Vercel, GitHub Pages, etc.).
+4. **Build for production**  
+   `npm run build`  
+   Deploy the generated `dist/` folder to any static host (Netlify, Vercel, GitHub Pages, etc.).
 
 ---
 
-## 🛠️ Development
+## ⚙️ Development
 
 | Script | Purpose |
 |--------|---------|
@@ -71,23 +64,23 @@ The codebase follows the **StandardJS** style guide (single quotes, no semicolon
 
 ## 🤝 Contributing
 
-1. Fork and clone the repository.  
+1. Fork the repository and clone it locally.  
 2. Create a feature branch: `git checkout -b feat/<short-name>`.  
-3. Adhere to the StandardJS style guide and add unit tests for new logic.  
-4. Push and open a pull request against `main`.  
-5. Reference an issue in the PR title/body (`Closes #<number>`) to auto‑close it.
+3. Follow the StandardJS style guide and add unit tests for new logic.  
+4. Commit and push, then open a pull request against `main`.  
+5. Reference an issue in the PR title/body (`Closes #<number>`) to close it automatically.
 
-Bug reports, feature ideas, documentation improvements, tests, and new games are welcome.
+Bug reports, feature requests, documentation improvements, tests, and new games are welcome.
 
 ---
 
-## 📦 Changelog
+## 📑 Changelog
 
 ### v1.0.0 – 2026‑08‑28  
 - Initial public release.  
-- Three classic arcade games bundled.  
-- Real‑time sync for up to 8 players.  
-- Live leaderboards per room.
+- Bundled three classic arcade games.  
+- Real‑time synchronization for up to eight players.  
+- Live per‑room leaderboards.
 
 ---
 
