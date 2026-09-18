@@ -1,6 +1,6 @@
 # GameRoom
 
-Browser‑based multiplayer arcade framework that lets you host classic games directly in the browser.
+A browser‑based multiplayer arcade framework that lets you host classic games directly in the browser.
 
 **Demo** – play online: https://gameroom-showcase.example.com
 
@@ -18,28 +18,7 @@ Browser‑based multiplayer arcade framework that lets you host classic games di
 
 ---
 
-## Overview
-
-GameRoom is a lightweight framework for running multiplayer retro arcade games in the browser.  
-Key traits:
-
-- **Instant play** – share a link, no sign‑ups or downloads.  
-- **Zero friction** – works on the latest Chrome, Firefox, Safari, Edge and Brave.  
-- **Scalable** – up to eight players per room, powered by Socket.IO.  
-- **Extensible** – add new games with Vite, TypeScript and the existing networking layer.  
-- **Bundle size** – < 300 kB after minification.
-
-Games included in the default bundle:
-
-| Name | Icon | Description |
-|------|------|-------------|
-| **Space Shooter** | 🚀 | Classic top‑down shooter with power‑ups. |
-| **Pac‑Clone** | 👾 | Navigate mazes, collect dots and avoid ghosts. |
-| **Retro Racer** | 🏎️ | 2‑player split‑screen racing with real‑time sync. |
-
----
-
-## Getting Started
+## Quick Start
 
 ```bash
 git clone https://github.com/shubhyagami/gameroom.git
@@ -48,9 +27,31 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000` in your browser, copy the URL and share it with friends – they can join instantly.
+Open `http://localhost:3000`, copy the URL, and share it with friends. They can join instantly.
 
-**Build for production**
+---
+
+## Overview
+
+| Feature | Description |
+|---------|-------------|
+| **Instant play** | Share a link – no signup or downloads required. |
+| **Zero friction** | Works on the latest Chrome, Firefox, Safari, Edge, and Brave. |
+| **Scalable** | Up to eight players per room via Socket.IO. |
+| **Extensible** | Add new games with Vite, TypeScript and the existing networking layer. |
+| **Bundle size** | < 300 kB after minification. |
+
+### Default games
+
+| Name | Icon | Description |
+|------|------|-------------|
+| Space Shooter | 🚀 | Top‑down shooter with power‑ups. |
+| Pac‑Clone | 👾 | Maze navigation, dot collection, ghost avoidance. |
+| Retro Racer | 🏎️ | 2‑player split‑screen racing, real‑time sync. |
+
+---
+
+## Production Build
 
 ```bash
 npm run build
@@ -63,31 +64,31 @@ Deploy the `dist/` directory to any static host (Netlify, Vercel, GitHub Pages, 
 ## Development
 
 | Script | Purpose |
-|--------|--------|
+|--------|---------|
 | `npm run dev` | Vite dev server with hot‑reload |
 | `npm run build` | Build `dist/` for production |
 | `npm run lint` | StandardJS linter |
 | `npm test` | Jest unit tests |
 
-### Environment
+**Environment**
 
-- Node 20+  
-- Vite 5  
-- TypeScript 5  
-- Socket.IO  
-- StandardJS (single quotes, no semicolons)
+* Node 20+
+* Vite 5
+* TypeScript 5
+* Socket.IO
+* StandardJS (single quotes, no semicolons)
 
-The CI pipeline runs lint, tests and static analysis on every PR.
+CI runs lint, tests, and static analysis on every PR.
 
 ---
 
 ## Extending GameRoom
 
-1. Add a new folder under `src/games/`.  
+1. Create a folder under `src/games/`.  
 2. Export a `Game` class that implements `src/games/IGame.ts`.  
-3. Register the game in `src/index.ts` by adding it to the `games` map.  
+3. Register it in `src/index.ts` by adding to the `games` map.  
 4. Write unit tests for your game logic.  
-5. (Optional) Place a screenshot in `public/screenshots/` for the showcase.
+5. (Optional) Add a screenshot to `public/screenshots/` for the showcase.
 
 ---
 
@@ -95,9 +96,9 @@ The CI pipeline runs lint, tests and static analysis on every PR.
 
 1. Fork the repository.  
 2. Create a feature branch: `git checkout -b feat/<short-name>`.  
-3. Follow the StandardJS style, add unit tests, and keep existing tests passing.  
+3. Follow the StandardJS style, add unit tests, keep existing tests passing.  
 4. Commit, push, open a PR against `main`.  
-5. Reference an issue (`Closes #123`) in the PR title or body to auto‑close it.
+5. Reference an issue in the PR title or body (e.g., `Closes #123`) to auto‑close it.
 
 All contributions are welcome – bug reports, feature requests, documentation updates, tests, and new games.
 
@@ -106,10 +107,11 @@ All contributions are welcome – bug reports, feature requests, documentation u
 ## Changelog
 
 ### v1.0.0 – 2026‑08‑28
-- Initial public release.  
-- Bundled three classic arcade games.  
-- Real‑time sync for up to eight players.  
-- Per‑room live leaderboards.
+
+* Initial public release.  
+* Bundled three classic arcade games.  
+* Real‑time sync for up to eight players.  
+* Per‑room live leaderboards.
 
 ---
 
@@ -121,6 +123,6 @@ MIT © [shubhyagami](https://github.com/shubhyagami)
 
 ## Community & Support
 
-- Issues: https://github.com/shubhyagami/gameroom/issues  
-- Discussions: https://github.com/shubhyagami/gameroom/discussions  
-- Discord: https://discord.gg/gameroom
+* Issues: https://github.com/shubhyagami/gameroom/issues  
+* Discussions: https://github.com/shubhyagami/gameroom/discussions  
+* Discord: https://discord.gg/gameroom
