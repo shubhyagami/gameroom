@@ -1,8 +1,9 @@
+[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
 # GameRoom
 
-A browser‑based multiplayer arcade framework that lets you host classic games directly in the browser – no downloads, no sign‑ups, instant play.
+GameRoom is a lightweight, browser‑based framework that lets you host classic arcade games without any downloads or user accounts. Share a single link and friends can play instantly.
 
-**Demo** – play online: https://gameroom-showcase.example.com
+**Live demo** – https://gameroom-showcase.example.com  
 
 ---
 
@@ -18,77 +19,82 @@ A browser‑based multiplayer arcade framework that lets you host classic games 
 
 ---
 
-## Getting Started
+## Quick Start
 
-1. **Clone** the repo  
-   `git clone https://github.com/shubhyagami/gameroom.git`
-2. **Navigate** to the folder  
-   `cd gameroom`
-3. **Install** dependencies (npm >= 20)  
-   `npm ci`
-4. **Run** the development server  
-   `npm run dev`
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/shubhyagami/gameroom.git
 
-Open `http://localhost:3000`, copy the URL, and share it with friends. They can join instantly.
+# 2️⃣ Install dependencies (Node 20+)
+cd gameroom
+npm ci
+
+# 3️⃣ Run the local dev server
+npm run dev
+```
+
+Open the URL printed in the console (usually http://localhost:3000) and share it. Your friends can join the same room without any sign‑up or install.
 
 ---
 
 ## Features
 
-- **Instant play** – share a link, no sign‑ups or downloads required.  
-- **Zero friction** – works in the latest Chrome, Firefox, Safari, Edge, and Brave.  
-- **Scalable** – up to eight players per room via Socket.IO.  
-- **Extensible** – add new games by creating a component in `src/games/` and registering it.  
-- **Lightweight** – bundle size less than 300 kB after minification.
+- **Instant play** – one‑click link sharing, no download required.  
+- **Modern browser support** – Chrome, Firefox, Safari, Edge, Brave, and others.  
+- **Up to 8 players per room** via Socket.IO.  
+- **Extensible** – add a new game by placing a component in `src/games/` and registering it.  
+- **Small footprint** – < 300 kB after minification.  
 
 ---
 
-## Default Games
+## Included Games
 
-| Name          | Icon | Description |
-|---------------|------|--------------|
+| Game | Icon | Description |
+|------|------|-------------|
 | Space Shooter | 🚀 | Top‑down shooter with power‑ups. |
-| Pac‑Clone     | 👾 | Maze navigation, dot collection, ghost avoidance. |
-| Retro Racer   | 🏎️ | 2‑player split‑screen racing with real‑time sync. |
+| Pac‑Clone | 👾 | Maze navigation, dot collection, ghost avoidance. |
+| Retro Racer | 🏎️ | 2‑player split‑screen racing with real‑time sync. |
 
 ---
 
 ## Production Build
 
-`npm run build`
+```bash
+npm run build
+```
 
-The `dist/` directory contains the production assets. Deploy that folder to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc.).
+The `dist/` folder contains the static assets. Deploy it to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc.).
 
 ---
 
-## Development
+## Development Scripts
 
 | Script | Purpose |
 |--------|---------|
-| `npm run dev`   | Vite dev server with hot‑reload |
-| `npm run build`  | Build `dist/` for production |
+| `npm run dev`   | Vite dev server with hot reload |
+| `npm run build` | Build `dist/` for production |
 | `npm run lint`  | StandardJS linter (single quotes, no semicolons) |
-| `npm test`       | Jest unit tests |
+| `npm test`      | Jest unit tests |
 
-**Environment**
+**Requirements**
 
 - Node 20+  
 - Vite 5  
 - TypeScript 5  
 - Socket.IO  
-- StandardJS
+- StandardJS  
 
-The CI pipeline runs linting, tests, and static analysis on every pull request.
+The CI pipeline runs linting, tests, and static analysis on every PR.
 
 ---
 
-## Extending GameRoom
+## Adding a New Game
 
-1. **Create** a folder under `src/games/` (e.g., `src/games/space-shooter`).  
-2. **Export** a `Game` class that implements `src/games/IGame.ts`.  
-3. **Register** it in `src/index.ts` by adding to the `games` map.  
-4. **Test** your logic with Jest.  
-5. **(Optional)** Add a screenshot to `public/screenshots/` for the showcase.
+1. Create a folder under `src/games/` (e.g., `src/games/space-shooter`).  
+2. Export a `Game` class that implements `src/games/IGame.ts`.  
+3. Register it in `src/index.ts` by adding an entry to the `games` map.  
+4. Write Jest tests to cover game logic.  
+5. (Optional) Add a screenshot to `public/screenshots/` so it appears in the showcase.
 
 ---
 
@@ -96,17 +102,18 @@ The CI pipeline runs linting, tests, and static analysis on every pull request.
 
 1. Fork the repository.  
 2. Create a feature branch: `git checkout -b feat/<short-name>`.  
-3. Follow StandardJS style, write unit tests, keep existing tests passing.  
-4. Commit, push, and open a pull request against `main`.  
+3. Follow the StandardJS style, add unit tests, keep existing tests passing.  
+4. Commit, push, and open a PR against `main`.  
 5. Reference an issue in the PR title or body (e.g., `Closes #123`) to auto‑close it.
 
-All contributions are welcome: bug reports, feature requests, documentation updates, tests, and new games.
+All contributions—bug reports, feature requests, documentation updates, tests, and new games—are welcome.
 
 ---
 
 ## Changelog
 
-### v1.0.0 – 2026‑08‑28
+**v1.0.0 – 2026‑08‑28**
+
 - Initial public release.  
 - Bundled three classic arcade games.  
 - Real‑time sync for up to eight players.  
@@ -124,4 +131,4 @@ MIT © [shubhyagami](https://github.com/shubhyagami)
 
 - Issues: https://github.com/shubhyagami/gameroom/issues  
 - Discussions: https://github.com/shubhyagami/gameroom/discussions  
-- Discord: https://discord.gg/gameroom
+- Discord: https://discord.gg/gameroom  
