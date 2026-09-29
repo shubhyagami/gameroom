@@ -1,101 +1,130 @@
+[K[2m  [2mmodel z-ai/glm-5.3-flash failed, trying next...[0m[0m
+[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
 # GameRoom
 
-A lightweight, browser-based framework for hosting classic arcade games. Share a single link, and friends can play instantly in their browser — no downloads or accounts required.
+GameRoom is a lightweight, browser‑only framework that lets you host classic arcade games with a single link. No downloads, no accounts—just a URL anyone can open in Chrome, Firefox, Safari, Edge, or Brave.
 
-**Live demo:** https://gameroom-showcase.example.com
+**Live demo:** <https://gameroom-showcase.example.com>
 
-![Build](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square) ![Lint](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/lint.yml?branch=main&label=Lint&style=flat-square) ![Test](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/test.yml?branch=main&label=Test&style=flat-square) ![Coverage](https://img.shields.io/codecov/c/github/shubhyagami/gameroom?style=flat-square) ![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square) ![Version](https://img.shields.io/github/v/tag/shubhyagami/gameroom?style=flat-square) ![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)
+[![Build](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/ci.yml?branch=main&label=Build&style=flat-square)](https://github.com/shubhyagami/gameroom/actions?query=workflow%3Aci)
+[![Lint](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/lint.yml?branch=main&label=Lint&style=flat-square)](https://github.com/shubhyagami/gameroom/actions?query=workflow%3Alint)
+[![Test](https://img.shields.io/github/actions/workflow/status/shubhyagami/gameroom/test.yml?branch=main&label=Test&style=flat-square)](https://github.com/shubhyagami/gameroom/actions?query=workflow%3Atest)
+[![Coverage](https://img.shields.io/codecov/c/github/shubhyagami/gameroom?style=flat-square)](https://app.codecov.io/gh/shubhyagami/gameroom)
+[![License](https://img.shields.io/github/license/shubhyagami/gameroom?style=flat-square)](./LICENSE)
+[![Version](https://img.shields.io/github/v/tag/shubhyagami/gameroom?style=flat-square)](https://github.com/shubhyagami/gameroom/releases)
+[![Stars](https://img.shields.io/github/stars/shubhyagami/gameroom?style=social&label=%20Stars)](https://github.com/shubhyagami/gameroom/stargazers)
 
-## Features
+---
 
-- **Instant play** — one shareable link, works out of the box in Chrome, Firefox, Safari, Edge, and Brave.
-- **Up to 8 players per room**, kept in sync in real time via Socket.IO.
-- **Extensible game system** — drop a component into `src/games/`, register it, and it shows up in the room.
-- **Small footprint** — under 300 kB once minified.
+## 📌 Features
 
-## Included Games
+- **Instant play** – share a single URL, and your friends can jump right in.
+- **Real–time multiplayer** – up to 8 players in a single room, synchronized via Socket.IO.
+- **Extensible** – add a new game by dropping a component into `src/games/` and registering it.
+- **Tiny footprint** – the minified bundle is under 300 kB, perfect for static hosting.
 
-| Game | Icon | Description |
-|------|------|-------------|
-| Space Shooter | 🚀 | Top-down shooter with power-ups. |
-| Pac-Clone | 👾 | Maze navigation, dot collection, and ghost avoidance. |
-| Retro Racer | 🏎️ | Two-player split-screen racing with real-time sync. |
+---
 
-## Getting Started
+## 🎮 Included Games
 
-Requires Node.js 20+ and npm.
+| Game         | Icon | Description |
+|--------------|------|-------------|
+| Space Shooter | 🚀 | Top‑down shooter with power‑ups. |
+| Pac‑Clone | 👾 | Maze navigation, dot collection, and ghost avoidance. |
+| Retro Racer | 🏎️ | Two‑player split‑screen racing with real‑time sync. |
+
+---
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
 git clone https://github.com/shubhyagami/gameroom.git
 cd gameroom
+
+# Install dependencies and launch the dev server
 npm ci
 npm run dev
 ```
 
-Open the URL printed in the console (usually `http://localhost:3000`) and share it with friends. They can join the same room without signing up or installing anything.
+The console will print the URL (usually `http://localhost:3000`). Share it with friends; they’ll join the same room immediately.
 
-## Production Build
+---
+
+## 📦 Production Build
 
 ```bash
 npm run build
 ```
 
-Static assets are written to `dist/`. Deploy that folder to any static host, such as Netlify, Vercel, GitHub Pages, or Cloudflare Pages.
+`dist/` contains the static assets. Deploy that folder to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc.).
 
-## Development
+---
 
-### Scripts
+## 🛠️ Development
 
-| Script | Purpose |
-|--------|---------|
-| `npm run dev` | Vite dev server with hot reload. |
-| `npm run build` | Build `dist/` for production. |
+### Available Scripts
+
+| Script        | Purpose |
+|---------------|---------|
+| `npm run dev` | Vite dev server with hot module reloading. |
+| `npm run build` | Build the `dist/` folder for production. |
 | `npm run lint` | Run StandardJS (single quotes, no semicolons). |
-| `npm test` | Run Jest unit tests. |
+| `npm test` | Execute Jest unit tests. |
 
 ### Tech Stack
 
-- Node.js 20+
+- Node.js **20+**
 - Vite 5
 - TypeScript 5
 - Socket.IO
 - StandardJS
 - Jest
 
-CI runs linting, tests, and static analysis on every pull request.
+CI checks linting, tests, and code coverage on every PR.
 
-## Adding a New Game
+---
 
-1. Create a folder under `src/games/` (for example, `src/games/space-shooter`).
-2. Export a `Game` class that implements the interface in `src/games/IGame.ts`.
-3. Register it in `src/index.ts` by adding an entry to the `games` map.
-4. Add Jest tests covering the game logic.
-5. Optional: add a screenshot to `public/screenshots/` so it appears in the showcase.
+## 🧩 Adding a New Game
 
-## Contributing
+1. Create a directory under `src/games/` (e.g., `src/games/space-shooter`).  
+2. Export a `Game` class that implements `src/games/IGame.ts`.  
+3. Register the game in `src/index.ts` by adding it to the `games` map.  
+4. Write Jest tests for the game logic.  
+5. (Optional) Add a screenshot to `public/screenshots/` to feature it in the showcase.
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/<short-name>`.
-3. Follow the StandardJS style, add unit tests, and keep the existing suite passing.
-4. Commit, push, and open a pull request against `main`.
-5. Reference an issue in the PR title or body (for example, `Closes #123`) so it closes automatically.
+---
+
+## 🤝 Contributing
+
+1. Fork the repo.  
+2. Create a feature branch: `git checkout -b feat/<short-name>`.  
+3. Follow StandardJS style, add tests, and keep the existing suite passing.  
+4. Commit, push, and open a PR against `main`.  
+5. Reference an issue in the PR title or body (e.g., `Closes #123`) to close it automatically.
 
 Bug reports, feature requests, documentation updates, tests, and new games are all welcome.
 
-## Changelog
+---
 
-### v1.0.0 (2026-08-28)
+## 📜 Changelog
 
-- Initial public release with three classic arcade games.
-- Real-time sync for up to eight players.
-- Per-room live leaderboards.
+### v1.0.0 – 2026‑08‑28
 
-## License
+- Initial public release with three classic arcade games.  
+- Real‑time sync for up to eight players.  
+- Per‑room live leaderboards.
+
+---
+
+## 📄 License
 
 MIT © [shubhyagami](https://github.com/shubhyagami)
 
-## Community & Support
+---
 
-- [Issues](https://github.com/shubhyagami/gameroom/issues)
-- [Discussions](https://github.com/shubhyagami/gameroom/discussions)
+## 📣 Community & Support
+
+- [Issues](https://github.com/shubhyagami/gameroom/issues)  
+- [Discussions](https://github.com/shubhyagami/gameroom/discussions)  
 - [Discord](https://discord.gg/gameroom)
